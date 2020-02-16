@@ -5,7 +5,7 @@ class App < Sinatra::Base
 	get 'reversename/:name' do
 		params[:name].reverse
 	end
-=beg
+
 	get '/square/:number' do
 		@square = params[:number].to_i ** 2
 		@square.to_s
